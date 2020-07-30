@@ -1,46 +1,42 @@
+
 <!DOCTYPE html>
 <html>
+
+
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Mobile Specific Metas
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Mobile Specific Metas
   ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+	
+  <title>Savage Collector</title>
 
-    <title>Savage Collector</title>
+   
+  <!-- Main structure css file -->
+  <link  rel="stylesheet" href="css/styles.css">
+  <link
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+  rel="stylesheet"
+  id="bootstrap-css"
+/>
 
-    <!-- Main structure css file -->
-    <link rel="stylesheet" href="css/register.css" />
-    <link
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      rel="stylesheet"
-      id="bootstrap-css"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-      crossorigin="anonymous"
-    />
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  
+ 
   </head>
   <body>
+
     <div class="container-fluid">
       <div class="row">
         <div
-          class="sc-container col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-3"
+          class="authfy-container col-xs-12 col-sm-10 col-md-8 col-lg-6 col-sm-offset-1 col-md-offset-2 col-lg-offset-3"
         >
-          <div class="col-sm-5 sc-panel-left">
+          <div class="col-sm-5 authfy-panel-left">
             <div class="brand-col">
               <div class="headline">
                 <div class="brand-logo">
@@ -54,13 +50,14 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-7 sc-panel-right">
-            <div class="sc-register">
-              <div class="sc-panel panel-register text-center active">
+          <div class="col-sm-7 authfy-panel-right">
+            <div class="authfy-login">
+
+              <div class="authfy-panel panel-login text-center active">
                 <div class="row">
                   <div class="col-xs-12 col-sm-12">
-                    <div class="sc-heading">
-                      <h3 class="sc-title">Sign up for free!</h3>
+                    <div class="authfy-heading">
+                      <h3 class="auth-title">Sign up for free!</h3>
                     </div>
                     <form
                       name="signupForm"
@@ -102,25 +99,22 @@
                       </div>
                       <div class="form-group">
                         <p class="term-policy text-muted small">
-                          <input
-                            type="checkbox"
-                            name="checkbtn"
-                            value="agree"
-                            required
-                          />
-                          I agree to the privacy policy and terms of service.
+                          I agree to the <a href="#">privacy policy</a> and
+                          <a href="#">terms of service</a>.
                         </p>
                       </div>
                       <div class="form-group">
                         <button
                           class="btn btn-lg btn-primary btn-block"
-                          type="submit"
+                          type="submit" onclick="errorMessage()""
                         >
                           Sign up with email
                         </button>
                       </div>
                     </form>
-                    <a href="#">Already have an account?</a>
+                    <a href="#"
+                      >Already have an account?</a
+                    >
                   </div>
                 </div>
               </div>
@@ -130,13 +124,14 @@
       </div>
     </div>
 
-    <!--  jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Javascript Files -->
+
+    <!-- initialize jQuery Library -->
+    <script src="js/jquery.min.js"></script>
 
     <!--Bootstrap js -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!-- Javascript Files -->
-    <script src="js/register.js"></script>
   </body>
 </html>
